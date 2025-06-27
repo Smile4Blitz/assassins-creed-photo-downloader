@@ -58,3 +58,7 @@ If any photo fails to download, its URL will be printed so you can download it m
 ## 🧾 License
 
 MIT License
+
+## Note
+
+Disclaimer: This tool is unofficial and not affiliated with or endorsed by Ubisoft. All trademarks and logos are the property of their respective owners.

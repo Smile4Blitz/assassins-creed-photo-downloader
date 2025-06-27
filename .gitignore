@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 
 Assassin's Creed * - My Photos/
+
+build/
+dist/
+*.spec
