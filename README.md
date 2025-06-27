@@ -7,7 +7,23 @@ Download all your **Assassin's Creed Photo Mode** images from the Ubisoft websit
 - [Python](https://www.python.org/downloads/)
 - [Firefox](https://www.firefox.com/)
 
-## ⚙️ Setup
+## 💻 Windows Executable (No Python Needed)
+
+If you don't want to install Python, you can use the standalone .exe:
+
+1. Download & run the latest .exe from the Releases page.
+2. A Firefox window will open - log in to your Ubisoft account.
+3. Once logged in, return to the terminal and press Enter.
+4. The script will reload the page and download each photo.
+
+📁 The photos will be saved in a folder named:
+```
+Assassin's Creed <Game Name> - My Photos
+```
+
+Note: If any photo fails to download, its URL will be printed so you can download it manually.
+
+## ⚙️ Manual Setup
 
 1. **Clone the repo**
 
@@ -33,19 +49,22 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## ▶️ Usage
-
-1. Run the script:
+4. Run the script:
 
 ```bash
 python assassins-creed-photo-downloader.py
 ```
 
-2. A Firefox window will open - log in to your Ubisoft account.
-3. Once logged in, return to the terminal and press Enter.
-4. The script will reload the page and download each photo.
+5. A Firefox window will open - log in to your Ubisoft account.
+6. Once logged in, return to the terminal and press Enter.
+7. The script will reload the page and download each photo.
 
-If any photo fails to download, its URL will be printed so you can download it manually.
+📁 The photos will be saved in a folder named:
+```
+Assassin's Creed <Game Name> - My Photos
+```
+
+Note: If any photo fails to download, its URL will be printed so you can download it manually.
 
 ## 🧾 License
 
