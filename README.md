@@ -2,14 +2,10 @@
 
 Download all your **Assassin's Creed Photo Mode** images from the Ubisoft website.
 
----
-
 ## 🛠 Requirements
 
 - [Python](https://www.python.org/downloads/)
 - [Firefox](https://www.firefox.com/)
-
----
 
 ## ⚙️ Setup
 
@@ -37,8 +33,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
 ## ▶️ Usage
 
 1. Run the script:
@@ -52,8 +46,6 @@ python assassins-creed-photo-downloader.py
 4. The script will reload the page and download each photo.
 
 If any photo fails to download, its URL will be printed so you can download it manually.
-
----
 
 ## 🧾 License
 
