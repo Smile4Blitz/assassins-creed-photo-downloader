@@ -3,7 +3,7 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import os, time
+import os, time, sys
 from webdriver_manager.firefox import GeckoDriverManager
 
 link = None
@@ -66,12 +66,14 @@ try:
 except Exception as e:
     print(f"Could not locate the photo list container: {e}")
     driver.quit()
-    exit(1)
+    input("Press Enter to exit...")
+    sys.exit(1)
 
 if len(hrefs) == 0:
     print("No photos found. Please check if you are logged in and have photos available.")
     driver.quit()
-    exit(1)
+    input("Press Enter to exit...")
+    sys.exit(1)
 
 print(f"Collected {len(hrefs)} photo URLs, downloading...")
 
@@ -85,5 +87,5 @@ for url in hrefs:
         print(f"Failed to download: {url}")
     time.sleep(1)
 
-print("Done.")
+input("Done! Press Enter to exit...")
 driver.quit()
